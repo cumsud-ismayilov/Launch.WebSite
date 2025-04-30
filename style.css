@@ -1,0 +1,237 @@
+.desktopNav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+
+  
+  .container {
+    .row {
+      .navLeftside {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        .page-logo {
+          a {
+            color: #000000;
+            font-size: 24px;
+            font-weight: 700;
+            span {
+              color: #407bff;
+            }
+          }
+        }
+        .navigation {
+          display: flex;
+          gap: 7px;
+          .home-page {
+            .home-link {
+              color: #000000;
+              font-size: 14px;
+              padding: 10px 15px;
+            }
+          }
+          .drop-page {
+            position: relative;
+            &:hover {
+              .sub-menu1 {
+                opacity: 1;
+                visibility: visible;
+                top: 13px;
+              }
+            }
+            .drop-link {
+              color: rgba(0, 0, 0, 0.5);
+              font-size: 14px;
+              padding: 10px 15px;
+              transition: all 0.2s ease;
+              .bi-chevron-down {
+                font-size: 10px;
+              }
+              &:hover {
+                color: #000000;
+              }
+            }
+            .sub-menu1 {
+              opacity: 0;
+              visibility: hidden;
+              position: absolute;
+              z-index: 999;
+              transition: all 0.2s ease;
+              top: 30px;
+              box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+              padding: 20px 0;
+              margin-top: 20px;
+              background: #ffffff;
+              .testim-page {
+                min-width: 180px;
+                .testi-link {
+                  padding: 5px 20px;
+                  display: block;
+                  color: #407bff;
+                }
+              }
+              .menu2-page {
+                min-width: 180px;
+                position: relative;
+                &:hover {
+                  .sub-menu2 {
+                    opacity: 1;
+                    visibility: visible;
+                    top: -20px;
+                  }
+                }
+                .menu2-link {
+                  padding: 5px 20px;
+                  display: block;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: baseline;
+                  transition: all 0.2s ease;
+                  .bi-chevron-right {
+                    font-size: 10px;
+                  }
+                  &:hover {
+                    color: #407bff;
+                  }
+                }
+                .sub-menu2 {
+                  opacity: 0;
+                  visibility: hidden;
+                  transition: all 0.2s ease;
+                  top: -2px;
+                  left: 180px;
+                  position: absolute;
+                  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.1);
+                  padding: 20px 0;
+                  margin-top: 20px;
+                  background: #ffffff;
+                  .one-page {
+                    min-width: 180px;
+                    .one-link {
+                      display: block;
+                      padding: 5px 20px;
+                      font-size: 14px;
+                      color: #407bff;
+                    }
+                  }
+                  .two-page {
+                    min-width: 180px;
+                    .two-link {
+                      display: block;
+                      padding: 5px 20px;
+                      font-size: 14px;
+                      transition: all 0.2s ease;
+                      &:hover {
+                        color: #407bff;
+                      }
+                    }
+                  }
+                  .three-page {
+                    min-width: 180px;
+                    .three-link {
+                      display: block;
+                      padding: 5px 20px;
+                      font-size: 14px;
+                      transition: all 0.2s ease;
+                      &:hover {
+                        color: #407bff;
+                      }
+                    }
+                  }
+                }
+              }
+              .menu3-page {
+                min-width: 180px;
+                .menu3-link {
+                  padding: 5px 20px;
+                  display: block;
+                  transition: all 0.2s ease;
+                  &:hover {
+                    color: #407bff;
+                  }
+                }
+              }
+            }
+          }
+          .feat-page {
+            .features-link {
+              color: rgba(0, 0, 0, 0.5);
+              font-size: 14px;
+              padding: 10px 15px;
+              transition: all 0.2s ease;
+              &:hover {
+                color: #000000;
+              }
+            }
+          }
+          .pric-page {
+            .pricing-link {
+              color: rgba(0, 0, 0, 0.5);
+              font-size: 14px;
+              padding: 10px 15px;
+              transition: all 0.2s ease;
+              &:hover {
+                color: #000000;
+              }
+            }
+          }
+          .about-page {
+            .about-link {
+              color: rgba(0, 0, 0, 0.5);
+              font-size: 14px;
+              padding: 10px 15px;
+              transition: all 0.2s ease;
+              &:hover {
+                color: #000000;
+              }
+            }
+          }
+          .contact-page {
+            .contact-link {
+              color: rgba(0, 0, 0, 0.5);
+              font-size: 14px;
+              padding: 10px 15px;
+              transition: all 0.2s ease;
+              &:hover {
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+      .navRightside {
+        display: flex;
+        justify-content: end;
+        gap: 4px;
+        margin-top: .25rem;
+        .sign-in {
+          margin: 0;
+          a {
+            color: rgba(0, 0, 0, 0.5);
+            padding: 6px 24px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            &:hover {
+              border-color: #000;
+              color: #000;
+            }
+          }
+        }
+        .register {
+          margin: 0;
+          a {
+            padding: 7px 24px;
+            border: 1px solid transparent;
+            color: #ffffff;
+            background: #407bff;
+            border-radius: 30px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
