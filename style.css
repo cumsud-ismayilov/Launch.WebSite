@@ -443,3 +443,74 @@ main {
     }
   }
 }
+
+footer {
+  padding: 70px 0;
+  background: #efefef;
+  .container {
+    .row {
+      .widget {
+        h3 {
+          font-size: 16px;
+          color: #000000;
+          margin-bottom: 30px;
+          span {
+            color: #407bff;
+          }
+        }
+        p {
+          font-size: 14px;
+          color: #888;
+        }
+        .connect {
+          h3 {
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 30px;
+          }
+          ul {
+            display: flex;
+            gap: 5px;
+            li {
+              a {
+                width: 30px;
+                height: 30px;
+                position: relative;
+                background: #777;
+                border-radius: 50%;
+                color: #ffffff;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .2s ease;
+                &:hover{
+                  background-color: #407bff;
+                }
+                .fa-brands {
+                 
+               
+                }
+              }
+            }
+          }
+        }
+      }
+      .projects{
+        h3{
+          font-size: 16px;
+          color: #000000;
+          margin-bottom: 30px;
+        }
+        ul{
+          li{
+            a{
+              font-size: 14px;
+              color: #888;
+            }
+          }
+        }
+      }
+    }
+  }
+}
