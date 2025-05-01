@@ -2,8 +2,6 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #ffffff;
-
-  
   .container {
     .row {
       .navLeftside {
@@ -204,7 +202,7 @@
         display: flex;
         justify-content: end;
         gap: 4px;
-        margin-top: .25rem;
+        margin-top: 0.25rem;
         .sign-in {
           margin: 0;
           a {
@@ -229,6 +227,216 @@
             background: #407bff;
             border-radius: 30px;
             font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  #home-page {
+    .container {
+      .row {
+        padding: 4rem 0;
+        position: relative;
+        &::before {
+          transform: translateX(60%);
+          position: absolute;
+          content: "";
+          width: 304px;
+          height: 264px;
+          background: url(../images/dots.png) right top;
+          right: 0;
+          z-index: -1;
+        }
+        .promote {
+          h1 {
+            font-size: 70px;
+            line-height: 1;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 30px;
+            overflow: hidden;
+          }
+          .another-par {
+            font-size: 16px;
+            color: #939393;
+            line-height: 1.6;
+            overflow: hidden;
+            a {
+              background: rgba(64, 123, 255, 0.07);
+              color: #407bff;
+            }
+          }
+          .btn-groups {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 38px;
+
+            .see-feat {
+              a {
+                background: #407bff;
+                border-color: #407bff;
+                color: #fff;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border-radius: 30px;
+                font-size: 11px;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 0.05rem;
+                transition: all 0.2s ease;
+                &:hover {
+                  border-color: #5489ff;
+                  background: #5489ff;
+                }
+              }
+            }
+            .pricing-btn {
+              a {
+                border: 1px solid #407bff;
+                color: #407bff;
+                padding-top: 17px;
+                padding-bottom: 17px;
+                padding-left: 30px;
+                padding-right: 30px;
+                border-radius: 30px;
+                font-size: 11px;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 0.05rem;
+                transition: all 0.2s ease;
+                &:hover {
+                  background-color: #407bff;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #feat-page {
+    padding: 100px 0;
+    .container {
+      .row {
+        .feat-text {
+          .digital-ser {
+            color: #407bff;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 700;
+            overflow: hidden;
+          }
+          h3 {
+            font-size: 38px;
+            color: #000000;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+          }
+          .far-away {
+            overflow: hidden;
+            p {
+              font-size: 16px;
+              color: #939393;
+            }
+            ul {
+              li {
+                font-size: 16px;
+                color: #939393;
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                .fa-check {
+                  color: #407bff;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+          .separated {
+            margin-top: 20px;
+            overflow: hidden;
+            h4 {
+              font-style: italic;
+              color: #000000;
+              font-size: 16px;
+              line-height: 1.4;
+              margin: 0 0 1rem;
+              .live-in-book {
+                background: rgba(64, 123, 255, 0.07);
+              }
+            }
+            .author {
+              display: flex;
+              align-items: center;
+              gap: 12px;
+              img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+              }
+              .author-desc {
+                .name {
+                  font-weight: 400;
+                  color: #000000;
+                  font-size: 14px;
+                  margin: 0;
+                }
+                .mission {
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #939393;
+                  margin: 0;
+                }
+              }
+            }
+          }
+        }
+        .dashboard {
+          width: 100%;
+          height: 465px;
+          box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1);
+          border: 10px solid #ffffff;
+          position: relative;
+          &:hover {
+            .overlay {
+              opacity: 1;
+            }
+          }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .play-button {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 42%;
+            left: 42%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .fa-play {
+              color: #407bff;
+            }
+          }
+          .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: all 0.2s ease;
+            cursor: pointer;
           }
         }
       }
