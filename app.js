@@ -3,11 +3,15 @@ window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
   
     if (Navbar) {
-      Navbar.classList.add("active");
+      Navbar.classList.add("active-nav");
     }
   } else {
     if (Navbar) {
-      Navbar.classList.remove("active");
+      Navbar.classList.remove("active-nav");
     }
   }
 });
+
+
+
+
