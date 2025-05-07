@@ -305,6 +305,7 @@ main {
           content: "";
           width: 297px;
           height: 264px;
+          overflow: hidden;
           background: url(https://preview.colorlib.com/theme/launch/images/dots.png.webp)
             right top;
           right: -1px;
@@ -416,6 +417,7 @@ main {
           flex-direction: column;
           gap: 10px;
           .servbox {
+            overflow: hidden;
             padding: 20px;
             display: flex;
             gap: 29px;
