@@ -15,3 +15,11 @@ window.addEventListener("scroll", () => {
 
 
 
+const cards = document.querySelectorAll(".servbox");
+
+cards.forEach((servbox) => {
+  servbox.addEventListener("click", () => {
+    cards.forEach((c) => c.classList.remove("bg-active"));
+    servbox.classList.add("bg-active");
+  });
+});

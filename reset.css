@@ -53,6 +53,13 @@ a {
 
 
 
+.bg-active{
+  background-color: #fff;
+  border-right: 4px solid #407bff;
+}
+
+
+
 
 
 
