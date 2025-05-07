@@ -1,8 +1,114 @@
-@media screen and (max-width: 990px)  {
-    .desktopNav{
-        display: none;
+@media screen and (max-width: 990px) {
+  .desktopNav {
+    display: none;
+  }
+  .mobilNav {
+    display: block;
+  }
+  main {
+    #home-page {
+      .container {
+        .row {
+          display: flex;
+          flex-direction: column-reverse;
+          &::before {
+            right: 21px;
+            width: 223px;
+          }
+          .promote {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+              font-size: 55px;
+              text-align: center;
+            }
+            .another-par {
+              text-align: center;
+            }
+          }
+        }
+      }
     }
-    .mobilNav{
-        display: block;
+    #dashboard-sec {
+      .container {
+        .row {
+          display: flex;
+          flex-direction: column-reverse;
+          .dash-img {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+    .testimonials-section {
+      .container {
+        .slider-layout {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .left-side {
+            width: 53%;
+            display: flex;
+            align-items: center;
+          }
+          .right-side {
+            width: 100%;
+            .owl-carousel {
+              .owl-item {
+                width: 350px;
+                .testimonial-item {
+                 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #about-sec{
+        .about-text{
+            .count-numb{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+  }
+  footer{
+    .container{
+        .row{
+            .projects{
+                margin-top: 1rem;
+            }
+        }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:600px) {
+    main{
+        #home-page{
+            .container{
+                .row{
+                    &::before{
+                        width: 149px;
+                        right: 28px;
+                    }
+                }
+            }
+        }
+        #feat-page{
+            container{
+                .row{
+                    .dashboard{
+                        height: 384px;
+                    }
+                }
+            }
+        }
     }
 }

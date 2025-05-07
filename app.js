@@ -23,3 +23,19 @@ cards.forEach((servbox) => {
     servbox.classList.add("bg-active");
   });
 });
+
+
+
+
+
+
+const Openmiddle = document.querySelector(".openmenu");
+ const CloseMenu = document.querySelector(".closemenu");
+const MiddleList = document.querySelector(".rightMenu");
+
+if (Openmiddle) {
+  Openmiddle.addEventListener("click",()=>{
+    
+    MiddleList.classList.toggle("activeMenu")
+  })
+}

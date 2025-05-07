@@ -5,6 +5,9 @@
   .container {
     .row {
       .mobilNav-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         .page-logo {
           a {
             color: #000000;
@@ -12,6 +15,40 @@
             font-weight: 700;
             span {
               color: #407bff;
+            }
+          }
+        }
+        .mobilMenu {
+          .bi-list {
+            font-size: 43px;
+            cursor: pointer;
+            position: relative;
+            .rightMenu {
+              position: fixed;
+              width: 300px;
+              background: #ffffff;
+              box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+              padding-top: 5px;
+              right: 0;
+              top: 0;
+              height: 100vh;
+              z-index: 9999;
+              opacity: 0;
+              transform: translateX(300px);
+              transition: .3s ease-in-out;
+             .close-btn{
+              display: flex;
+              justify-content: end;
+              padding-right: 11px;
+              .bi-x-lg {
+                font-size: 30px;
+              }
+             }
+              
+            }
+            .activeMenu{
+              transform: translateX(0px);
+              opacity: 1;
             }
           }
         }
