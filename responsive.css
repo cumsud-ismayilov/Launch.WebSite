@@ -58,57 +58,61 @@
             .owl-carousel {
               .owl-item {
                 width: 350px;
-                .testimonial-item {
-                 
-                }
               }
             }
           }
         }
       }
     }
-    #about-sec{
-        .about-text{
-            .count-numb{
-                display: flex;
-                flex-direction: column;
-            }
+    #about-sec {
+      .about-text {
+        .count-numb {
+          display: flex;
+          flex-direction: column;
         }
+      }
     }
   }
-  footer{
-    .container{
-        .row{
-            .projects{
-                margin-top: 1rem;
-            }
+  footer {
+    .container {
+      .row {
+        .projects {
+          margin-top: 1rem;
         }
+      }
     }
   }
 }
 
-
-
-@media screen and (max-width:600px) {
-    main{
-        #home-page{
-            .container{
-                .row{
-                    &::before{
-                        width: 149px;
-                        right: 28px;
-                    }
-                }
-            }
+@media screen and (max-width: 600px) {
+  main {
+    #home-page {
+      .container {
+        .row {
+          &::before {
+            width: 149px;
+            right: 28px;
+          }
         }
-        #feat-page{
-            .container{
-                .row{
-                    .dashboard{
-                        height: 384px;
-                    }
-                }
-            }
-        }
+      }
     }
+    #feat-page {
+      .container {
+        .row {
+          .dashboard {
+            height: 384px;
+          }
+        }
+      }
+    }
+    #dashboard-sec {
+      .container {
+        .row {
+          .serv-group {
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
 }

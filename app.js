@@ -39,3 +39,21 @@ if (Openmiddle) {
     MiddleList.classList.toggle("activeMenu")
   })
 }
+
+
+
+
+
+const MobNavbar = document.querySelector(".mobilNav");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+  
+    if (MobNavbar) {
+      MobNavbar.classList.add("active-nav2");
+    }
+  } else {
+    if (MobNavbar) {
+      MobNavbar.classList.remove("active-nav2");
+    }
+  }
+});

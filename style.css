@@ -2,6 +2,7 @@
   display: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #fff;
   .container {
     .row {
       .mobilNav-item {
@@ -42,6 +43,18 @@
               padding-right: 11px;
               .bi-x-lg {
                 font-size: 30px;
+              }
+             }
+             .list-text{
+              /* display: flex; */
+              li{
+                font-size: 14px;
+                padding: 5px 20px;
+                color: #000000;
+               .mobilList-item {
+                  
+                 
+                }
               }
              }
               

@@ -39,6 +39,18 @@ a {
   animation-duration: 0.5s;
   z-index: 9999;
 }
+.active-nav2 {
+  box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  animation-name: fadeInUp;
+  animation-duration: 0.5s;
+  z-index: 9999;
+}
 
 @keyframes fadeInUp {
   from {
